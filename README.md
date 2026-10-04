@@ -1,7 +1,6 @@
 Version 1.1
 
 # Milky Way Rotation Curve and Dark Matter Mass Modeling
------------------------------------------------------------------------------
 Keywords: rotation curve, Milky Way, dark matter halo, Jeans equation,
 red giant stars (RGB), velocity moments
 
@@ -38,23 +37,23 @@ constraints on the distribution of Dark Matter beyond the visible baryonic matte
 The following detected errors have been addressed in *Version 1.1*:
 
 (1) Code errors in Galactocentric frame creation and velocity calculation 
-*File:* mw_dynamics/kinematics.py | *Title:* Calculation of the Galactocentric 3D Velocities of the Red Giant Stars 
+**File:** mw_dynamics/kinematics.py | **Title:** Calculation of the Galactocentric 3D Velocities of the Red Giant Stars 
 
 (2) Showing a star under the same APOGEE_ID but different LOCATION_ID in the 
 dataset table
-*File:* mw_dynamics/selection.py | *Title:* Removing Duplicate Star Entries
+**File:** mw_dynamics/selection.py | **Title:** Removing Duplicate Star Entries
 
 (3) Missing values (NaN) in the radial_velocity column of the Gaia DR3 dataset
-*File:* mw_dynamics/selection.py | *Title:* Filling Missing Gaia Radial Velocities
+**File:** mw_dynamics/selection.py | **Title:** Filling Missing Gaia Radial Velocities
 
 (4) Derivative calculations by switching from discrete point-to-point differentiation to a continuous function-based approach
-*File:* Milky_Way_Mass_Rotation_Curve.ipynb | *Section:* 3.5, 3.6
+**File:** Milky_Way_Mass_Rotation_Curve.ipynb | **Section:** 3.5, 3.6
 
 (5) An error in the square root calculation logic.
-*File:* Milky_Way_Mass_Rotation_Curve.ipynb | *Section:* 4
+**File:** Milky_Way_Mass_Rotation_Curve.ipynb | **Section:** 4
 
 (6) Data filtering errors by properly accounting for measurement uncertainties (weighted_dist_error and radial_velocity_error) in Gaia DR3 and APOGEE DR17.
-*File:* Milky_Way_Mass_Rotation_Curve.ipynb | *Section:* 1.2
+**File:** Milky_Way_Mass_Rotation_Curve.ipynb | **Section:** 1.2
 
 With these fixes applied, the consistent results in the rotation curve have been
 obtained: 
