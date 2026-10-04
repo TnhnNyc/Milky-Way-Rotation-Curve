@@ -20,11 +20,11 @@ def get_galactocentric_frame(galcen_distance=None, z_sun=None, galcen_v_sun=None
     """
     kwargs = {}
     if galcen_distance is not None:
-        kwargs["galactocentric_distance"] = galcen_distance
+        kwargs["galcen_distance"] = galcen_distance
     if z_sun is not None:
         kwargs["z_sun"] = z_sun
     if galcen_v_sun is not None:
-        kwargs["galactocentric_v_sun"] = galactocentric_v_sun
+        kwargs["galcen_v_sun"] = galcen_v_sun
     frame = Galactocentric(**kwargs)
     return frame
 
